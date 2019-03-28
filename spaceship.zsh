@@ -41,32 +41,34 @@ fi
 if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
   SPACESHIP_PROMPT_ORDER=(
     time          # Time stampts section
+    # nodedns       # For NodeDNS
+    # memory        # Memory Check
     user          # Username section
     dir           # Current directory section
     host          # Hostname section
     git           # Git section (git_branch + git_status)
-    hg            # Mercurial section (hg_branch  + hg_status)
+    # hg            # Mercurial section (hg_branch  + hg_status)
     package       # Package version
     node          # Node.js section
-    ruby          # Ruby section
-    elm           # Elm section
-    elixir        # Elixir section
-    xcode         # Xcode section
-    swift         # Swift section
-    golang        # Go section
-    php           # PHP section
-    rust          # Rust section
-    haskell       # Haskell Stack section
-    julia         # Julia section
+    # ruby          # Ruby section
+    # elm           # Elm section
+    # elixir        # Elixir section
+    # xcode         # Xcode section
+    # swift         # Swift section
+    # golang        # Go section
+    # php           # PHP section
+    # rust          # Rust section
+    # haskell       # Haskell Stack section
+    # julia         # Julia section
     docker        # Docker section
     aws           # Amazon Web Services section
-    venv          # virtualenv section
-    conda         # conda virtualenv section
-    pyenv         # Pyenv section
-    dotnet        # .NET section
-    ember         # Ember.js section
-    kubecontext   # Kubectl context section
-    terraform     # Terraform workspace section
+    # venv          # virtualenv section
+    # conda         # conda virtualenv section
+    # pyenv         # Pyenv section
+    # dotnet        # .NET section
+    # ember         # Ember.js section
+    # kubecontext   # Kubectl context section
+    # terraform     # Terraform workspace section
     exec_time     # Execution time
     line_sep      # Line break
     battery       # Battery level and status
@@ -80,6 +82,8 @@ fi
 if [ -z "$SPACESHIP_RPROMPT_ORDER" ]; then
   SPACESHIP_RPROMPT_ORDER=(
     # empty by default
+    nodedns
+    memory
   )
 fi
 
